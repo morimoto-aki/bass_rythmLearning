@@ -9,9 +9,7 @@ fileList = os.listdir(path)
 
 def filePath():
     for filename in fileList:
-        pathBass = path + "/" + filename + "/bass/"
         pathScore = path + "/" + filename + "/score/"
-        pathOutput = path + "/" + filename + "/output/"
 
         Path_score.append(pathScore)
 
