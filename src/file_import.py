@@ -10,7 +10,6 @@ fileList = os.listdir(path)
 def filePath():
     for filename in fileList:
         pathScore = path + "/" + filename + "/score/"
-
         Path_score.append(pathScore)
 
     return(Path_score)
