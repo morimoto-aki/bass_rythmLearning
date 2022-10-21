@@ -1,15 +1,19 @@
+'''全楽譜のファイルのパスを取得するプログラム'''
 import os
 
-Path_score = []
-
-path = "./music"
-fileList = os.listdir(path)
+path_list = []
+PATH = "./music"
+file_list = os.listdir(PATH)
 # print(fileList)
 
 
-def filePath():
-    for filename in fileList:
-        pathScore = path + "/" + filename + "/score/"
-        Path_score.append(pathScore)
+def file_path():
+    '''ファイルのパスを取得する関数'''
+    for filename in file_list:
+        path_score = PATH + "/" + filename + "/score/"
+        path_list.append(path_score)
 
-    return(Path_score)
+    return path_list
+
+
+# print(file_path())
