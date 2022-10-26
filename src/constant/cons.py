@@ -1,2 +1,4 @@
 '''定数一覧'''
-PATH = "./music"
+
+#楽譜ファイルのパス
+MUSUC_PATH = "./music"
