@@ -10,5 +10,4 @@ def file_path():
 
     return midipath_list, xmlpath_list
 
-
 # print(file_path())

@@ -1,46 +1,76 @@
 '''xml形式の楽譜をcsvにするプログラム'''
-import csv  # pylint: disable=unused-import
-import pandas as pd  # pylint: disable=unused-import
-from music21 import converter  # pylint: disable=unused-import
-import file_import  # pylint: disable=unused-import
+import pickle
+import csv
+from music21 import converter, instrument, note, chord
+import file_import
 
 path_list = file_import.file_path()
 
 
-def mxltransfer(path):
+class Note:
+    measureNumber = 0
+    pitch = 0
+    offset = 0
+    quarterLength = 0
+    fullName = 0
+    tie = 0
+    notehead = 0
+
+    def set(self, element):
+        self.measureNumber = element.measureNumber
+        self.pitch = element.pitch
+        self.offset = element.offset
+        self.quarterLength = element.quarterLength
+        self.fullName = element.fullName
+        if element.tie != None:
+            self.tie = element.tie.type
+        else:
+            self.tie = element.tie
+        self.notehead = element.notehead
+
+    def get(self):
+        noteinfo = [self.measureNumber, self.pitch, self.offset,
+                    self.quarterLength, self.fullName, self.tie, self.notehead]
+        return noteinfo
+
+
+def get_notes():
     '''楽譜をcsvにする関数'''
-    scorepath = path + "score.xml"
-    score = converter.parse(scorepath)
+    path = file_import.file_path()
+    filepath = path[1]
+    notes = []
 
-    NoteList = [["Note", "seconds", "offset", "duration", "measure", "Tie", "Ghost", "NoteValue"]]
+    note_list = [["measure", "pitch", "offset", "quarterLength", "fullName", "tie", "notehead"]]
 
-    for el in score.recurse().notesAndRests:
-        if(not el.isRest):
-            Note = [el.name, el1, el.offset, el.duration, el.measureNumber,
-                    el.tie, el.notehead is "x", el.quarterLength]
-        if not el.isRest and el.notehead is not "x":
-            if tie_Flag:
-                NoteList.append(Note)
-                if el.tie is not None:
-                    tie_Flag = False
+    for file in filepath:
+        xml = converter.parse(file)
+        print("Parsing %s" % file)
+        notes_to_parse = None
 
-            else:
-                if el.tie is None:
-                    NoteList.append(Note)
-                if el.tie is not None:
-                    tie_Flag = True
-        el1 = el.seconds + el1
-    # print(s.metadata.title)
-    title = score.metadata.title
-    with open(path + "score.csv", 'w') as file:
-        writer = csv.writer(file, lineterminator='\n')
-        writer.writerows(NoteList)
+        try:  # file has instrument parts
+            s2 = instrument.partitionByInstrument(xml)
+            notes_to_parse = s2.parts[0].recurse()
+        except:  # file has notes in a flat structure
+            notes_to_parse = xml.flat.notes
+
+        for element in notes_to_parse:
+            if isinstance(element, note.Note):
+                noteobj = Note()
+                noteobj.set(element)
+                noteinfo = noteobj.get()
+                notes.append(noteinfo)
+                note_list.append(noteinfo)
+            elif isinstance(element, chord.Chord):
+                notes.append('.'.join(str(n) for n in element.normalOrder))
+
+    with open('src/data/notesinfo.csv', 'w') as filepath:
+        writer = csv.writer(filepath, lineterminator='\n')
+        writer.writerows(note_list)
 
 
 def main():
     '''main関数'''
-    for path in path_list:
-        mxltransfer(path)
+    get_notes()
 
 
 if __name__ == '__main__':

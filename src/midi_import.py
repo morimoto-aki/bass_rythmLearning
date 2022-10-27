@@ -1,5 +1,4 @@
 import pickle
-import glob
 from music21 import converter, instrument, note, chord
 import file_import
 
@@ -7,10 +6,10 @@ import file_import
 def get_notes():
     """ Get all the notes and chords from the midi files in the ./midi_songs directory """
     path = file_import.file_path()
-    filepath = path[1] + "score.mid"
+    filepath = path[0]
     notes = []
 
-    for file in glob.glob(filepath):
+    for file in filepath:
         midi = converter.parse(file)
 
         print("Parsing %s" % file)
@@ -35,4 +34,4 @@ def get_notes():
     return notes
 
 
-get_notes()
+# get_notes()
