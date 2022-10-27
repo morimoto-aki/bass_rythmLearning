@@ -1,4 +1,4 @@
-'''xml形式の楽譜をcsvにするプログラム'''
+'''xml形式の楽譜をインポートするプログラム'''
 import pickle
 import csv
 from music21 import converter, instrument, note, chord
@@ -8,6 +8,7 @@ path_list = file_import.file_path()
 
 
 class Note:
+    """音符情報用のクラス"""
     measureNumber = 0
     pitch = 0
     offset = 0
