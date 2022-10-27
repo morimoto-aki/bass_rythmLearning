@@ -18,6 +18,7 @@ class Note:
     notehead = 0
 
     def set(self, element):
+        """音符情報setメソッド"""
         self.measureNumber = element.measureNumber
         self.pitch = element.pitch
         self.offset = element.offset
@@ -30,6 +31,7 @@ class Note:
         self.notehead = element.notehead
 
     def get(self):
+        """音符情報getメソッド"""
         noteinfo = [self.measureNumber, self.pitch, self.offset,
                     self.quarterLength, self.fullName, self.tie, self.notehead]
         return noteinfo
