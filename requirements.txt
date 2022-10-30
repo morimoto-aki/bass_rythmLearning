@@ -7,3 +7,4 @@ numpy==1.19.4
 matplotlib==3.5.0
 music21==6.7.1
 pandas==1.1.2
+hmmlearn==0.2.8

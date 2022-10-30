@@ -1,0 +1,632 @@
+Note,seconds,offset,duration,measure,Tie,Ghost,NoteValue
+E,0,0.0,<music21.duration.Duration 1.75>,1,,False,1.75
+B,1.0294117647058825,1.75,<music21.duration.Duration 0.25>,1,<music21.tie.Tie start>,False,0.25
+C#,1.4705882352941178,2.5,<music21.duration.Duration 0.5>,1,,False,0.5
+B,1.7647058823529413,3.0,<music21.duration.Duration 0.5>,1,,False,0.5
+C#,2.058823529411765,3.5,<music21.duration.Duration 0.5>,1,,False,0.5
+E,2.3529411764705883,0.0,<music21.duration.Duration 1.75>,2,,False,1.75
+B,3.382352941176471,1.75,<music21.duration.Duration 0.25>,2,<music21.tie.Tie start>,False,0.25
+C#,3.823529411764706,2.5,<music21.duration.Duration 0.5>,2,,False,0.5
+E,4.11764705882353,3.0,<music21.duration.Duration 0.5>,2,,False,0.5
+C#,4.411764705882353,3.5,<music21.duration.Duration 0.5>,2,,False,0.5
+E,4.705882352941177,0.0,<music21.duration.Duration 1.75>,3,,False,1.75
+B,5.735294117647059,1.75,<music21.duration.Duration 0.25>,3,<music21.tie.Tie start>,False,0.25
+C#,6.176470588235294,2.5,<music21.duration.Duration 0.5>,3,,False,0.5
+B,6.470588235294118,3.0,<music21.duration.Duration 0.5>,3,,False,0.5
+C#,6.764705882352941,3.5,<music21.duration.Duration 0.5>,3,,False,0.5
+E,7.0588235294117645,0.0,<music21.duration.Duration 1.75>,4,,False,1.75
+G#,8.088235294117647,1.75,<music21.duration.Duration 0.25>,4,<music21.tie.Tie start>,False,0.25
+C#,8.38235294117647,2.25,<music21.duration.Duration 0.5>,4,,False,0.5
+C,8.676470588235293,2.75,<music21.duration.Duration 0.25>,4,,False,0.25
+B,8.823529411764705,3.0,<music21.duration.Duration 0.5>,4,,False,0.5
+C#,9.117647058823529,3.5,<music21.duration.Duration 0.5>,4,,False,0.5
+E,9.411764705882353,0.0,<music21.duration.Duration 0.5>,5,,False,0.5
+E,9.705882352941178,0.5,<music21.duration.Duration 0.5>,5,<music21.tie.Tie start>,False,0.5
+B,10.441176470588237,1.75,<music21.duration.Duration 0.25>,5,<music21.tie.Tie start>,False,0.25
+C#,10.882352941176473,2.5,<music21.duration.Duration 0.5>,5,,False,0.5
+E,11.176470588235297,3.0,<music21.duration.Duration 0.5>,5,,False,0.5
+C#,11.470588235294121,3.5,<music21.duration.Duration 0.5>,5,,False,0.5
+E,11.764705882352946,0.0,<music21.duration.Duration 0.5>,6,,False,0.5
+E,12.05882352941177,0.5,<music21.duration.Duration 0.5>,6,<music21.tie.Tie start>,False,0.5
+F#,12.79411764705883,1.75,<music21.duration.Duration 0.25>,6,,False,0.25
+E,12.94117647058824,2.0,<music21.duration.Duration 0.75>,6,,False,0.75
+F#,13.382352941176476,2.75,<music21.duration.Duration 0.25>,6,<music21.tie.Tie start>,False,0.25
+G#,13.823529411764712,3.5,<music21.duration.Duration 0.5>,6,,False,0.5
+C#,14.117647058823536,0.0,<music21.duration.Duration 1.75>,7,,False,1.75
+C#,15.147058823529418,1.75,<music21.duration.Duration 0.25>,7,<music21.tie.Tie start>,False,0.25
+B,15.44117647058824,2.25,<music21.duration.Duration 0.25>,7,,False,0.25
+G#,15.588235294117652,2.5,<music21.duration.Duration 0.5>,7,,False,0.5
+B,15.882352941176476,3.0,<music21.duration.Duration 0.5>,7,,False,0.5
+C,16.1764705882353,3.5,<music21.duration.Duration 0.5>,7,,False,0.5
+C#,16.470588235294123,0.0,<music21.duration.Duration 1.75>,8,,False,1.75
+C#,17.64705882352942,2.0,<music21.duration.Duration 0.75>,8,,False,0.75
+C#,18.088235294117656,2.75,<music21.duration.Duration 0.25>,8,<music21.tie.Tie start>,False,0.25
+D#,18.52941176470589,3.5,<music21.duration.Duration 0.5>,8,,False,0.5
+E,18.823529411764714,0.0,<music21.duration.Duration 1.75>,9,,False,1.75
+B,19.852941176470598,1.75,<music21.duration.Duration 0.25>,9,<music21.tie.Tie start>,False,0.25
+C#,20.294117647058833,2.5,<music21.duration.Duration 0.5>,9,,False,0.5
+E,20.588235294117656,3.0,<music21.duration.Duration 0.5>,9,,False,0.5
+C#,20.882352941176478,3.5,<music21.duration.Duration 0.5>,9,,False,0.5
+E,21.1764705882353,0.0,<music21.duration.Duration 2.0>,10,,False,2.0
+E,22.352941176470594,2.0,<music21.duration.Duration 0.75>,10,,False,0.75
+G#,22.79411764705883,2.75,<music21.duration.Duration 0.25>,10,<music21.tie.Tie start>,False,0.25
+B,23.235294117647065,3.5,<music21.duration.Duration 0.5>,10,,False,0.5
+C#,23.529411764705888,0.0,<music21.duration.Duration 3.0>,11,,False,3.0
+G#,25.588235294117652,3.5,<music21.duration.Duration 0.5>,11,,False,0.5
+C#,25.882352941176475,0.0,<music21.duration.Duration 0.75>,12,,False,0.75
+B,26.32352941176471,0.75,<music21.duration.Duration 0.25>,12,,False,0.25
+G#,26.470588235294123,1.0,<music21.duration.Duration 0.75>,12,,False,0.75
+B,26.91176470588236,1.75,<music21.duration.Duration 0.25>,12,<music21.tie.Tie start>,False,0.25
+C,27.352941176470594,2.5,<music21.duration.Duration 0.5>,12,,False,0.5
+C#,27.647058823529417,3.0,<music21.duration.Duration 0.5>,12,,False,0.5
+G#,27.94117647058824,3.5,<music21.duration.Duration 0.5>,12,,False,0.5
+G#,28.23529411764706,0.0,<music21.duration.Duration 0.5>,13,,False,0.5
+G#,28.529411764705884,0.5,<music21.duration.Duration 1.5>,13,<music21.tie.Tie start>,False,1.5
+C#,29.85294117647059,2.75,<music21.duration.Duration 0.25>,13,,False,0.25
+F#,30.000000000000004,3.0,<music21.duration.Duration 0.25>,13,,False,0.25
+E,30.147058823529417,3.25,<music21.duration.Duration 0.25>,13,,False,0.25
+C#,30.29411764705883,3.5,<music21.duration.Duration 0.5>,13,,False,0.5
+F#,30.588235294117652,0.0,<music21.duration.Duration 1.75>,14,,False,1.75
+C#,31.617647058823536,1.75,<music21.duration.Duration 0.25>,14,,False,0.25
+F#,31.76470588235295,2.0,<music21.duration.Duration 0.5>,14,,False,0.5
+C#,32.20588235294119,2.75,<music21.duration.Duration 0.25>,14,<music21.tie.Tie start>,False,0.25
+C,32.64705882352943,3.5,<music21.duration.Duration 0.5>,14,,False,0.5
+B,32.94117647058825,0.0,<music21.duration.Duration 1.75>,15,,False,1.75
+D#,33.97058823529414,1.75,<music21.duration.Duration 0.25>,15,<music21.tie.Tie start>,False,0.25
+E,34.26470588235296,2.25,<music21.duration.Duration 0.5>,15,,False,0.5
+F#,34.7058823529412,3.0,<music21.duration.Duration 0.5>,15,,False,0.5
+A,35.00000000000003,3.5,<music21.duration.Duration 0.5>,15,,False,0.5
+B,35.294117647058854,0.0,<music21.duration.Duration 0.25>,16,,False,0.25
+A,35.44117647058827,0.25,<music21.duration.Duration 0.25>,16,,False,0.25
+F#,35.58823529411768,0.5,<music21.duration.Duration 0.5>,16,,False,0.5
+B,35.88235294117651,1.0,<music21.duration.Duration 0.25>,16,,False,0.25
+A,36.02941176470592,1.25,<music21.duration.Duration 0.25>,16,,False,0.25
+F#,36.17647058823533,1.5,<music21.duration.Duration 0.5>,16,,False,0.5
+B,36.47058823529416,2.0,<music21.duration.Duration 0.5>,16,,False,0.5
+C#,36.764705882352985,2.5,<music21.duration.Duration 0.5>,16,,False,0.5
+E,37.05882352941181,3.0,<music21.duration.Duration 0.25>,16,,False,0.25
+C#,37.205882352941224,3.25,<music21.duration.Duration 0.25>,16,,False,0.25
+B,37.35294117647064,3.5,<music21.duration.Duration 0.5>,16,,False,0.5
+E,37.64705882352946,0.0,<music21.duration.Duration 1.75>,17,,False,1.75
+B,38.67647058823535,1.75,<music21.duration.Duration 0.25>,17,<music21.tie.Tie start>,False,0.25
+C#,39.117647058823586,2.5,<music21.duration.Duration 0.5>,17,,False,0.5
+E,39.41176470588241,3.0,<music21.duration.Duration 0.5>,17,,False,0.5
+C#,39.70588235294124,3.5,<music21.duration.Duration 0.5>,17,,False,0.5
+E,40.000000000000064,0.0,<music21.duration.Duration 1.0>,18,<music21.tie.Tie start>,False,1.0
+E,41.02941176470594,1.75,<music21.duration.Duration 0.25>,18,<music21.tie.Tie start>,False,0.25
+F#,41.617647058823586,2.75,<music21.duration.Duration 0.25>,18,<music21.tie.Tie start>,False,0.25
+G#,42.058823529411825,3.5,<music21.duration.Duration 0.5>,18,,False,0.5
+C#,42.35294117647065,0.0,<music21.duration.Duration 1.75>,19,,False,1.75
+G#,43.382352941176535,1.75,<music21.duration.Duration 0.25>,19,<music21.tie.Tie start>,False,0.25
+B,43.67647058823536,2.25,<music21.duration.Duration 0.5>,19,,False,0.5
+C,43.97058823529419,2.75,<music21.duration.Duration 0.25>,19,,False,0.25
+C#,44.1176470588236,3.0,<music21.duration.Duration 0.25>,19,,False,0.25
+B,44.26470588235301,3.25,<music21.duration.Duration 0.25>,19,,False,0.25
+G#,44.411764705882426,3.5,<music21.duration.Duration 0.5>,19,,False,0.5
+C#,44.70588235294125,0.0,<music21.duration.Duration 1.75>,20,,False,1.75
+C#,45.88235294117655,2.0,<music21.duration.Duration 0.75>,20,,False,0.75
+C#,46.32352941176478,2.75,<music21.duration.Duration 0.25>,20,<music21.tie.Tie start>,False,0.25
+D#,46.76470588235302,3.5,<music21.duration.Duration 0.5>,20,,False,0.5
+E,47.058823529411846,0.0,<music21.duration.Duration 1.75>,21,,False,1.75
+B,48.08823529411773,1.75,<music21.duration.Duration 0.25>,21,<music21.tie.Tie start>,False,0.25
+C#,48.52941176470597,2.5,<music21.duration.Duration 0.5>,21,,False,0.5
+E,48.823529411764795,3.0,<music21.duration.Duration 0.5>,21,,False,0.5
+C#,49.11764705882362,3.5,<music21.duration.Duration 0.5>,21,,False,0.5
+E,49.41176470588245,0.0,<music21.duration.Duration 2.0>,22,,False,2.0
+E,50.588235294117744,2.0,<music21.duration.Duration 0.75>,22,,False,0.75
+G#,51.029411764705976,2.75,<music21.duration.Duration 0.25>,22,<music21.tie.Tie start>,False,0.25
+B,51.470588235294215,3.5,<music21.duration.Duration 0.5>,22,,False,0.5
+C#,51.76470588235304,0.0,<music21.duration.Duration 1.75>,23,,False,1.75
+G#,52.794117647058926,1.75,<music21.duration.Duration 0.25>,23,,False,0.25
+B,52.94117647058834,2.0,<music21.duration.Duration 0.5>,23,,False,0.5
+C,53.235294117647165,2.5,<music21.duration.Duration 0.5>,23,,False,0.5
+C#,53.52941176470599,3.0,<music21.duration.Duration 0.25>,23,,False,0.25
+B,53.676470588235404,3.25,<music21.duration.Duration 0.25>,23,,False,0.25
+G#,53.82352941176482,3.5,<music21.duration.Duration 0.25>,23,,False,0.25
+C#,54.11764705882364,0.0,<music21.duration.Duration 0.75>,24,,False,0.75
+B,54.558823529411875,0.75,<music21.duration.Duration 0.25>,24,,False,0.25
+G#,54.70588235294129,1.0,<music21.duration.Duration 0.75>,24,,False,0.75
+B,55.14705882352952,1.75,<music21.duration.Duration 0.25>,24,,False,0.25
+C#,55.29411764705893,2.0,<music21.duration.Duration 0.5>,24,,False,0.5
+B,55.73529411764717,2.75,<music21.duration.Duration 0.25>,24,<music21.tie.Tie start>,False,0.25
+G#,56.17647058823541,3.5,<music21.duration.Duration 0.5>,24,,False,0.5
+F#,56.47058823529424,0.0,<music21.duration.Duration 2.0>,25,<music21.tie.Tie start>,False,2.0
+C#,58.088235294117766,2.75,<music21.duration.Duration 0.25>,25,,False,0.25
+E,58.23529411764718,3.0,<music21.duration.Duration 0.5>,25,,False,0.5
+E#,58.529411764706005,3.5,<music21.duration.Duration 0.5>,25,,False,0.5
+F#,58.82352941176483,0.0,<music21.duration.Duration 1.75>,26,,False,1.75
+C#,59.852941176470715,1.75,<music21.duration.Duration 0.25>,26,,False,0.25
+F#,60.00000000000013,2.0,<music21.duration.Duration 0.5>,26,,False,0.5
+C#,60.44117647058837,2.75,<music21.duration.Duration 0.25>,26,<music21.tie.Tie start>,False,0.25
+C,60.882352941176606,3.5,<music21.duration.Duration 0.5>,26,,False,0.5
+B,61.17647058823543,0.0,<music21.duration.Duration 1.5>,27,,False,1.5
+D#,62.0588235294119,1.5,<music21.duration.Duration 0.5>,27,<music21.tie.Tie start>,False,0.5
+E,62.50000000000014,2.25,<music21.duration.Duration 0.5>,27,,False,0.5
+E#,62.79411764705897,2.75,<music21.duration.Duration 0.25>,27,,False,0.25
+F#,62.94117647058838,3.0,<music21.duration.Duration 0.5>,27,,False,0.5
+A,63.23529411764721,3.5,<music21.duration.Duration 0.25>,27,,False,0.25
+A#,63.38235294117662,3.75,<music21.duration.Duration 0.25>,27,,False,0.25
+B,63.52941176470603,0.0,<music21.duration.Duration 0.25>,28,,False,0.25
+A,63.676470588235446,0.25,<music21.duration.Duration 0.25>,28,,False,0.25
+F#,63.82352941176486,0.5,<music21.duration.Duration 0.25>,28,,False,0.25
+B,64.11764705882368,1.0,<music21.duration.Duration 0.75>,28,,False,0.75
+B,64.70588235294132,2.0,<music21.duration.Duration 0.5>,28,,False,0.5
+B,65.00000000000014,2.5,<music21.duration.Duration 0.5>,28,,False,0.5
+A,65.29411764705897,3.0,<music21.duration.Duration 0.25>,28,,False,0.25
+A,65.44117647058837,3.25,<music21.duration.Duration 0.25>,28,,False,0.25
+G#,65.58823529411778,3.5,<music21.duration.Duration 0.25>,28,,False,0.25
+G,65.73529411764719,3.75,<music21.duration.Duration 0.25>,28,,False,0.25
+F#,65.88235294117659,0.0,<music21.duration.Duration 0.5>,29,,False,0.5
+F#,66.17647058823542,0.5,<music21.duration.Duration 0.5>,29,<music21.tie.Tie start>,False,0.5
+A,66.91176470588248,1.75,<music21.duration.Duration 0.25>,29,<music21.tie.Tie start>,False,0.25
+A,67.35294117647071,2.5,<music21.duration.Duration 0.5>,29,,False,0.5
+C#,67.64705882352953,3.0,<music21.duration.Duration 0.5>,29,,False,0.5
+C,67.94117647058836,3.5,<music21.duration.Duration 0.5>,29,,False,0.5
+B,68.23529411764719,0.0,<music21.duration.Duration 0.25>,30,,False,0.25
+B,68.38235294117659,0.25,<music21.duration.Duration 0.5>,30,,False,0.5
+B,68.67647058823542,0.75,<music21.duration.Duration 0.25>,30,,False,0.25
+A,68.82352941176482,1.0,<music21.duration.Duration 0.75>,30,,False,0.75
+A,69.26470588235306,1.75,<music21.duration.Duration 0.25>,30,,False,0.25
+G#,69.41176470588246,2.0,<music21.duration.Duration 0.75>,30,,False,0.75
+A,69.8529411764707,2.75,<music21.duration.Duration 0.25>,30,,False,0.25
+G,70.0000000000001,3.0,<music21.duration.Duration 0.75>,30,,False,0.75
+F#,70.58823529411774,0.0,<music21.duration.Duration 0.5>,31,,False,0.5
+F#,70.88235294117656,0.5,<music21.duration.Duration 0.5>,31,<music21.tie.Tie start>,False,0.5
+F#,71.61764705882362,1.75,<music21.duration.Duration 0.25>,31,<music21.tie.Tie start>,False,0.25
+A,72.05882352941185,2.5,<music21.duration.Duration 0.5>,31,,False,0.5
+C#,72.35294117647068,3.0,<music21.duration.Duration 0.5>,31,,False,0.5
+C,72.6470588235295,3.5,<music21.duration.Duration 0.5>,31,,False,0.5
+B,72.94117647058833,0.0,<music21.duration.Duration 1.5>,32,,False,1.5
+D#,73.8235294117648,1.5,<music21.duration.Duration 0.5>,32,<music21.tie.Tie start>,False,0.5
+E,74.26470588235303,2.25,<music21.duration.Duration 0.5>,32,,False,0.5
+F#,74.70588235294126,3.0,<music21.duration.Duration 0.5>,32,,False,0.5
+B,75.00000000000009,3.5,<music21.duration.Duration 0.25>,32,,False,0.25
+E#,75.14705882352949,3.75,<music21.duration.Duration 0.25>,32,,False,0.25
+F#,75.2941176470589,0.0,<music21.duration.Duration 0.5>,33,,False,0.5
+F#,75.58823529411772,0.5,<music21.duration.Duration 0.5>,33,<music21.tie.Tie start>,False,0.5
+C#,76.32352941176478,1.75,<music21.duration.Duration 0.25>,33,,False,0.25
+F#,76.47058823529419,2.0,<music21.duration.Duration 0.75>,33,,False,0.75
+C#,76.91176470588242,2.75,<music21.duration.Duration 0.25>,33,<music21.tie.Tie start>,False,0.25
+C,77.35294117647065,3.5,<music21.duration.Duration 0.5>,33,,False,0.5
+B,77.64705882352948,0.0,<music21.duration.Duration 1.75>,34,,False,1.75
+B,78.82352941176477,2.0,<music21.duration.Duration 0.75>,34,,False,0.75
+C#,79.264705882353,2.75,<music21.duration.Duration 0.25>,34,<music21.tie.Tie start>,False,0.25
+D#,79.70588235294123,3.5,<music21.duration.Duration 0.5>,34,,False,0.5
+E,80.00000000000006,0.0,<music21.duration.Duration 1.75>,35,,False,1.75
+E,81.17647058823535,2.0,<music21.duration.Duration 0.75>,35,,False,0.75
+F#,81.61764705882358,2.75,<music21.duration.Duration 0.25>,35,<music21.tie.Tie start>,False,0.25
+G#,82.05882352941181,3.5,<music21.duration.Duration 0.25>,35,,False,0.25
+C#,82.35294117647062,0.0,<music21.duration.Duration 0.5>,36,,False,0.5
+C#,82.64705882352945,0.5,<music21.duration.Duration 0.5>,36,<music21.tie.Tie start>,False,0.5
+G#,83.52941176470591,2.0,<music21.duration.Duration 0.5>,36,,False,0.5
+C#,83.82352941176474,2.5,<music21.duration.Duration 0.5>,36,,False,0.5
+B,84.11764705882356,3.0,<music21.duration.Duration 0.5>,36,,False,0.5
+C#,84.41176470588239,3.5,<music21.duration.Duration 0.5>,36,,False,0.5
+E,84.70588235294122,0.0,<music21.duration.Duration 2.0>,37,,False,2.0
+E,85.8823529411765,2.0,<music21.duration.Duration 0.75>,37,,False,0.75
+F#,86.32352941176474,2.75,<music21.duration.Duration 0.25>,37,<music21.tie.Tie start>,False,0.25
+G#,86.76470588235297,3.5,<music21.duration.Duration 0.25>,37,,False,0.25
+C#,87.05882352941178,0.0,<music21.duration.Duration 2.0>,38,<music21.tie.Tie start>,False,2.0
+C#,88.5294117647059,2.5,<music21.duration.Duration 0.25>,38,,False,0.25
+C#,88.6764705882353,2.75,<music21.duration.Duration 0.25>,38,,False,0.25
+C,88.82352941176471,3.0,<music21.duration.Duration 0.25>,38,,False,0.25
+C,88.97058823529412,3.25,<music21.duration.Duration 0.25>,38,,False,0.25
+B,89.11764705882352,3.5,<music21.duration.Duration 0.25>,38,,False,0.25
+B,89.26470588235293,3.75,<music21.duration.Duration 0.25>,38,,False,0.25
+A,89.41176470588233,0.0,<music21.duration.Duration 0.5>,39,,False,0.5
+A,89.70588235294116,0.5,<music21.duration.Duration 0.5>,39,<music21.tie.Tie start>,False,0.5
+E,90.44117647058822,1.75,<music21.duration.Duration 0.25>,39,<music21.tie.Tie start>,False,0.25
+A,90.73529411764703,2.25,<music21.duration.Duration 0.5>,39,,False,0.5
+E,91.02941176470586,2.75,<music21.duration.Duration 0.25>,39,,False,0.25
+A,91.17647058823526,3.0,<music21.duration.Duration 0.5>,39,,False,0.5
+E,91.47058823529409,3.5,<music21.duration.Duration 0.5>,39,,False,0.5
+A,91.76470588235291,0.0,<music21.duration.Duration 0.5>,40,,False,0.5
+A,92.05882352941174,0.5,<music21.duration.Duration 0.5>,40,<music21.tie.Tie start>,False,0.5
+E,92.7941176470588,1.75,<music21.duration.Duration 0.25>,40,,False,0.25
+A,92.9411764705882,2.0,<music21.duration.Duration 0.75>,40,,False,0.75
+E,93.38235294117644,2.75,<music21.duration.Duration 0.25>,40,,False,0.25
+A,93.52941176470584,3.0,<music21.duration.Duration 0.5>,40,,False,0.5
+E,93.82352941176467,3.5,<music21.duration.Duration 0.5>,40,,False,0.5
+A,94.1176470588235,0.0,<music21.duration.Duration 0.5>,41,,False,0.5
+A,94.41176470588232,0.5,<music21.duration.Duration 0.5>,41,<music21.tie.Tie start>,False,0.5
+E,95.14705882352938,1.75,<music21.duration.Duration 0.25>,41,<music21.tie.Tie start>,False,0.25
+A,95.44117647058819,2.25,<music21.duration.Duration 0.5>,41,,False,0.5
+E,95.73529411764702,2.75,<music21.duration.Duration 0.25>,41,,False,0.25
+A,95.88235294117642,3.0,<music21.duration.Duration 0.5>,41,,False,0.5
+E,96.17647058823525,3.5,<music21.duration.Duration 0.5>,41,,False,0.5
+A,96.47058823529407,0.0,<music21.duration.Duration 0.5>,42,,False,0.5
+A,96.7647058823529,0.5,<music21.duration.Duration 0.5>,42,<music21.tie.Tie start>,False,0.5
+E,97.49999999999996,1.75,<music21.duration.Duration 0.25>,42,<music21.tie.Tie start>,False,0.25
+A,97.79411764705877,2.25,<music21.duration.Duration 0.5>,42,,False,0.5
+E,98.0882352941176,2.75,<music21.duration.Duration 0.25>,42,,False,0.25
+A,98.235294117647,3.0,<music21.duration.Duration 0.5>,42,,False,0.5
+E,98.52941176470583,3.5,<music21.duration.Duration 0.5>,42,,False,0.5
+A,98.82352941176465,0.0,<music21.duration.Duration 0.5>,43,,False,0.5
+A,99.11764705882348,0.5,<music21.duration.Duration 0.5>,43,<music21.tie.Tie start>,False,0.5
+E,99.85294117647054,1.75,<music21.duration.Duration 0.25>,43,<music21.tie.Tie start>,False,0.25
+A,100.14705882352935,2.25,<music21.duration.Duration 0.5>,43,,False,0.5
+E,100.44117647058818,2.75,<music21.duration.Duration 0.25>,43,,False,0.25
+A,100.58823529411758,3.0,<music21.duration.Duration 0.5>,43,,False,0.5
+E,100.8823529411764,3.5,<music21.duration.Duration 0.5>,43,,False,0.5
+A,101.17647058823523,0.0,<music21.duration.Duration 0.5>,44,,False,0.5
+A,101.47058823529406,0.5,<music21.duration.Duration 0.5>,44,<music21.tie.Tie start>,False,0.5
+E,102.20588235294112,1.75,<music21.duration.Duration 0.25>,44,<music21.tie.Tie start>,False,0.25
+A,102.49999999999993,2.25,<music21.duration.Duration 0.5>,44,,False,0.5
+E,102.79411764705875,2.75,<music21.duration.Duration 0.25>,44,,False,0.25
+A,102.94117647058816,3.0,<music21.duration.Duration 0.25>,44,,False,0.25
+E,103.08823529411757,3.25,<music21.duration.Duration 0.25>,44,,False,0.25
+B,103.23529411764697,3.5,<music21.duration.Duration 0.25>,44,,False,0.25
+E,103.38235294117638,3.75,<music21.duration.Duration 0.25>,44,,False,0.25
+A,103.52941176470578,0.0,<music21.duration.Duration 0.5>,45,,False,0.5
+A,103.82352941176461,0.5,<music21.duration.Duration 0.5>,45,<music21.tie.Tie start>,False,0.5
+E,104.55882352941167,1.75,<music21.duration.Duration 0.25>,45,<music21.tie.Tie start>,False,0.25
+A,104.85294117647048,2.25,<music21.duration.Duration 0.5>,45,,False,0.5
+E,105.1470588235293,2.75,<music21.duration.Duration 0.25>,45,,False,0.25
+A,105.29411764705871,3.0,<music21.duration.Duration 0.5>,45,,False,0.5
+E,105.58823529411754,3.5,<music21.duration.Duration 0.5>,45,,False,0.5
+A,105.88235294117636,0.0,<music21.duration.Duration 0.5>,46,,False,0.5
+A,106.17647058823519,0.5,<music21.duration.Duration 0.5>,46,<music21.tie.Tie start>,False,0.5
+E,106.91176470588225,1.75,<music21.duration.Duration 0.25>,46,<music21.tie.Tie start>,False,0.25
+A,107.20588235294106,2.25,<music21.duration.Duration 0.5>,46,,False,0.5
+E,107.49999999999989,2.75,<music21.duration.Duration 0.25>,46,,False,0.25
+A,107.64705882352929,3.0,<music21.duration.Duration 0.25>,46,,False,0.25
+E,107.7941176470587,3.25,<music21.duration.Duration 0.25>,46,,False,0.25
+A,107.9411764705881,3.5,<music21.duration.Duration 0.5>,46,,False,0.5
+B,108.23529411764693,0.0,<music21.duration.Duration 0.5>,47,,False,0.5
+B,108.52941176470576,0.5,<music21.duration.Duration 1.0>,47,,False,1.0
+D#,109.11764705882341,1.5,<music21.duration.Duration 0.5>,47,<music21.tie.Tie start>,False,0.5
+E,109.55882352941164,2.25,<music21.duration.Duration 0.5>,47,,False,0.5
+E#,109.85294117647047,2.75,<music21.duration.Duration 0.25>,47,,False,0.25
+F#,109.99999999999987,3.0,<music21.duration.Duration 0.5>,47,,False,0.5
+A,110.2941176470587,3.5,<music21.duration.Duration 0.5>,47,,False,0.5
+B,110.58823529411752,0.0,<music21.duration.Duration 0.75>,48,,False,0.75
+B,111.02941176470576,0.75,<music21.duration.Duration 0.25>,48,,False,0.25
+D#,111.17647058823516,1.0,<music21.duration.Duration 0.25>,48,,False,0.25
+D#,111.32352941176457,1.25,<music21.duration.Duration 0.5>,48,,False,0.5
+E,111.6176470588234,1.75,<music21.duration.Duration 0.25>,48,<music21.tie.Tie start>,False,0.25
+E#,112.05882352941163,2.5,<music21.duration.Duration 0.5>,48,,False,0.5
+F#,112.35294117647045,3.0,<music21.duration.Duration 0.25>,48,,False,0.25
+A,112.49999999999986,3.25,<music21.duration.Duration 0.25>,48,,False,0.25
+C#,112.64705882352926,3.5,<music21.duration.Duration 0.25>,48,,False,0.25
+C#,112.79411764705867,3.75,<music21.duration.Duration 0.25>,48,,False,0.25
+B,112.94117647058808,0.0,<music21.duration.Duration 0.75>,49,,False,0.75
+D#,113.38235294117631,0.75,<music21.duration.Duration 0.25>,49,<music21.tie.Tie start>,False,0.25
+D#,113.67647058823512,1.25,<music21.duration.Duration 0.25>,49,,False,0.25
+D#,113.82352941176453,1.5,<music21.duration.Duration 0.25>,49,,False,0.25
+E,113.97058823529393,1.75,<music21.duration.Duration 0.25>,49,<music21.tie.Tie start>,False,0.25
+E,114.26470588235274,2.25,<music21.duration.Duration 0.5>,49,,False,0.5
+F#,114.70588235294098,3.0,<music21.duration.Duration 0.5>,49,,False,0.5
+A,114.9999999999998,3.5,<music21.duration.Duration 0.5>,49,,False,0.5
+B,115.29411764705863,0.0,<music21.duration.Duration 0.25>,50,,False,0.25
+A,115.44117647058803,0.25,<music21.duration.Duration 0.25>,50,,False,0.25
+F#,115.58823529411744,0.5,<music21.duration.Duration 0.5>,50,,False,0.5
+B,115.88235294117626,1.0,<music21.duration.Duration 0.25>,50,,False,0.25
+A,116.02941176470567,1.25,<music21.duration.Duration 0.25>,50,,False,0.25
+F#,116.17647058823508,1.5,<music21.duration.Duration 0.5>,50,,False,0.5
+B,116.4705882352939,2.0,<music21.duration.Duration 0.25>,50,,False,0.25
+A,116.61764705882331,2.25,<music21.duration.Duration 0.25>,50,,False,0.25
+F#,116.76470588235271,2.5,<music21.duration.Duration 0.5>,50,,False,0.5
+B,117.05882352941154,3.0,<music21.duration.Duration 0.25>,50,,False,0.25
+C#,117.20588235294095,3.25,<music21.duration.Duration 0.25>,50,,False,0.25
+E,117.35294117647035,3.5,<music21.duration.Duration 0.25>,50,,False,0.25
+C#,117.49999999999976,3.75,<music21.duration.Duration 0.25>,50,,False,0.25
+E,117.64705882352916,0.0,<music21.duration.Duration 0.5>,51,,False,0.5
+E,117.94117647058799,0.5,<music21.duration.Duration 0.5>,51,,False,0.5
+E,118.23529411764682,1.0,<music21.duration.Duration 0.75>,51,,False,0.75
+B,118.67647058823505,1.75,<music21.duration.Duration 0.25>,51,<music21.tie.Tie start>,False,0.25
+C#,119.11764705882328,2.5,<music21.duration.Duration 0.5>,51,,False,0.5
+E,119.4117647058821,3.0,<music21.duration.Duration 0.5>,51,,False,0.5
+C#,119.70588235294093,3.5,<music21.duration.Duration 0.5>,51,,False,0.5
+E,119.99999999999976,0.0,<music21.duration.Duration 0.5>,52,,False,0.5
+E,120.29411764705858,0.5,<music21.duration.Duration 0.5>,52,<music21.tie.Tie start>,False,0.5
+E,121.17647058823505,2.0,<music21.duration.Duration 0.75>,52,,False,0.75
+F#,121.61764705882328,2.75,<music21.duration.Duration 0.25>,52,<music21.tie.Tie start>,False,0.25
+G#,122.05882352941151,3.5,<music21.duration.Duration 0.5>,52,,False,0.5
+C#,122.35294117647034,0.0,<music21.duration.Duration 1.0>,53,<music21.tie.Tie start>,False,1.0
+B,123.38235294117622,1.75,<music21.duration.Duration 0.25>,53,,False,0.25
+G#,123.52941176470563,2.0,<music21.duration.Duration 0.75>,53,,False,0.75
+B,123.97058823529386,2.75,<music21.duration.Duration 0.25>,53,<music21.tie.Tie start>,False,0.25
+C,124.41176470588209,3.5,<music21.duration.Duration 0.5>,53,,False,0.5
+C#,124.70588235294092,0.0,<music21.duration.Duration 0.75>,54,,False,0.75
+G#,125.14705882352915,0.75,<music21.duration.Duration 0.25>,54,,False,0.25
+C#,125.29411764705856,1.0,<music21.duration.Duration 0.75>,54,,False,0.75
+G#,125.73529411764679,1.75,<music21.duration.Duration 0.25>,54,,False,0.25
+C#,125.8823529411762,2.0,<music21.duration.Duration 0.75>,54,,False,0.75
+C#,126.32352941176443,2.75,<music21.duration.Duration 0.25>,54,<music21.tie.Tie start>,False,0.25
+D#,126.76470588235266,3.5,<music21.duration.Duration 0.5>,54,,False,0.5
+E,127.05882352941148,0.0,<music21.duration.Duration 0.5>,55,,False,0.5
+E,127.35294117647031,0.5,<music21.duration.Duration 0.5>,55,<music21.tie.Tie start>,False,0.5
+B,128.08823529411737,1.75,<music21.duration.Duration 0.25>,55,<music21.tie.Tie start>,False,0.25
+C#,128.5294117647056,2.5,<music21.duration.Duration 0.5>,55,,False,0.5
+E,128.8235294117644,3.0,<music21.duration.Duration 0.5>,55,,False,0.5
+C#,129.11764705882322,3.5,<music21.duration.Duration 0.5>,55,,False,0.5
+E,129.41176470588204,0.0,<music21.duration.Duration 0.5>,56,,False,0.5
+E,129.70588235294085,0.5,<music21.duration.Duration 0.5>,56,<music21.tie.Tie start>,False,0.5
+E,130.5882352941173,2.0,<music21.duration.Duration 0.75>,56,,False,0.75
+G#,131.02941176470554,2.75,<music21.duration.Duration 0.25>,56,<music21.tie.Tie start>,False,0.25
+B,131.47058823529377,3.5,<music21.duration.Duration 0.5>,56,,False,0.5
+C#,131.7647058823526,0.0,<music21.duration.Duration 3.0>,57,,False,3.0
+G#,133.82352941176433,3.5,<music21.duration.Duration 0.5>,57,,False,0.5
+C#,134.11764705882314,0.0,<music21.duration.Duration 0.75>,58,,False,0.75
+B,134.55882352941137,0.75,<music21.duration.Duration 0.25>,58,,False,0.25
+G#,134.7058823529408,1.0,<music21.duration.Duration 0.5>,58,,False,0.5
+B,134.9999999999996,1.5,<music21.duration.Duration 0.5>,58,,False,0.5
+C#,135.2941176470584,2.0,<music21.duration.Duration 0.75>,58,,False,0.75
+B,135.73529411764665,2.75,<music21.duration.Duration 0.25>,58,<music21.tie.Tie start>,False,0.25
+G#,136.17647058823488,3.5,<music21.duration.Duration 0.5>,58,,False,0.5
+F#,136.4705882352937,0.0,<music21.duration.Duration 0.5>,59,,False,0.5
+F#,136.7647058823525,0.5,<music21.duration.Duration 1.5>,59,<music21.tie.Tie start>,False,1.5
+C#,138.0882352941172,2.75,<music21.duration.Duration 0.25>,59,,False,0.25
+F#,138.23529411764662,3.0,<music21.duration.Duration 0.25>,59,,False,0.25
+C#,138.38235294117604,3.25,<music21.duration.Duration 0.25>,59,,False,0.25
+F#,138.52941176470546,3.5,<music21.duration.Duration 0.25>,59,,False,0.25
+C#,138.67647058823488,3.75,<music21.duration.Duration 0.25>,59,,False,0.25
+F#,138.8235294117643,0.0,<music21.duration.Duration 1.75>,60,,False,1.75
+C#,139.85294117647018,1.75,<music21.duration.Duration 0.25>,60,,False,0.25
+F#,139.9999999999996,2.0,<music21.duration.Duration 0.75>,60,,False,0.75
+C#,140.44117647058783,2.75,<music21.duration.Duration 0.25>,60,,False,0.25
+C#,140.58823529411725,3.0,<music21.duration.Duration 0.5>,60,,False,0.5
+C,140.88235294117607,3.5,<music21.duration.Duration 0.5>,60,,False,0.5
+B,141.17647058823488,0.0,<music21.duration.Duration 1.5>,61,,False,1.5
+D#,142.05882352941134,1.5,<music21.duration.Duration 0.5>,61,<music21.tie.Tie start>,False,0.5
+E,142.49999999999957,2.25,<music21.duration.Duration 0.5>,61,,False,0.5
+F#,142.9411764705878,3.0,<music21.duration.Duration 0.5>,61,,False,0.5
+A,143.23529411764662,3.5,<music21.duration.Duration 0.5>,61,,False,0.5
+B,143.52941176470543,0.0,<music21.duration.Duration 0.25>,62,,False,0.25
+B,143.67647058823485,0.25,<music21.duration.Duration 0.5>,62,,False,0.5
+B,143.97058823529366,0.75,<music21.duration.Duration 0.25>,62,,False,0.25
+A,144.11764705882308,1.0,<music21.duration.Duration 0.5>,62,,False,0.5
+A,144.4117647058819,1.5,<music21.duration.Duration 0.25>,62,,False,0.25
+F#,144.5588235294113,1.75,<music21.duration.Duration 0.25>,62,<music21.tie.Tie start>,False,0.25
+F#,144.85294117647015,2.25,<music21.duration.Duration 0.25>,62,,False,0.25
+B,144.99999999999957,2.5,<music21.duration.Duration 0.5>,62,,False,0.5
+B,145.29411764705839,3.0,<music21.duration.Duration 0.5>,62,,False,0.5
+B,145.5882352941172,3.5,<music21.duration.Duration 0.5>,62,,False,0.5
+F#,145.882352941176,0.0,<music21.duration.Duration 1.0>,63,,False,1.0
+F#,146.47058823529366,1.0,<music21.duration.Duration 0.75>,63,,False,0.75
+A,146.9117647058819,1.75,<music21.duration.Duration 0.25>,63,<music21.tie.Tie start>,False,0.25
+C#,147.64705882352897,3.0,<music21.duration.Duration 0.5>,63,,False,0.5
+C,147.94117647058778,3.5,<music21.duration.Duration 0.5>,63,,False,0.5
+B,148.2352941176466,0.0,<music21.duration.Duration 1.0>,64,,False,1.0
+A,148.82352941176424,1.0,<music21.duration.Duration 0.75>,64,,False,0.75
+G#,149.26470588235247,1.75,<music21.duration.Duration 0.25>,64,<music21.tie.Tie start>,False,0.25
+G#,149.7058823529407,2.5,<music21.duration.Duration 0.5>,64,,False,0.5
+G,149.99999999999952,3.0,<music21.duration.Duration 0.5>,64,,False,0.5
+E,150.29411764705833,3.5,<music21.duration.Duration 0.5>,64,,False,0.5
+F#,150.58823529411714,0.0,<music21.duration.Duration 1.0>,65,,False,1.0
+F#,151.1764705882348,1.0,<music21.duration.Duration 0.75>,65,,False,0.75
+A,151.61764705882302,1.75,<music21.duration.Duration 0.25>,65,<music21.tie.Tie start>,False,0.25
+A,152.05882352941126,2.5,<music21.duration.Duration 0.5>,65,,False,0.5
+C#,152.35294117647007,3.0,<music21.duration.Duration 0.5>,65,,False,0.5
+C,152.64705882352888,3.5,<music21.duration.Duration 0.25>,65,,False,0.25
+A,152.7941176470583,3.75,<music21.duration.Duration 0.25>,65,,False,0.25
+B,152.94117647058772,0.0,<music21.duration.Duration 0.75>,66,,False,0.75
+D#,153.38235294117595,0.75,<music21.duration.Duration 0.25>,66,<music21.tie.Tie start>,False,0.25
+E,153.6764705882348,1.25,<music21.duration.Duration 0.5>,66,,False,0.5
+E#,153.9705882352936,1.75,<music21.duration.Duration 0.25>,66,,False,0.25
+F#,154.11764705882302,2.0,<music21.duration.Duration 0.5>,66,,False,0.5
+A,154.41176470588184,2.5,<music21.duration.Duration 0.25>,66,,False,0.25
+A#,154.55882352941126,2.75,<music21.duration.Duration 0.25>,66,,False,0.25
+B,154.70588235294068,3.0,<music21.duration.Duration 0.25>,66,,False,0.25
+A,154.8529411764701,3.25,<music21.duration.Duration 0.25>,66,,False,0.25
+E,154.99999999999952,3.5,<music21.duration.Duration 0.25>,66,,False,0.25
+E,155.14705882352894,3.75,<music21.duration.Duration 0.25>,66,,False,0.25
+F#,155.29411764705836,0.0,<music21.duration.Duration 0.5>,67,,False,0.5
+F#,155.58823529411717,0.5,<music21.duration.Duration 0.5>,67,<music21.tie.Tie start>,False,0.5
+C#,156.3235294117642,1.75,<music21.duration.Duration 0.25>,67,,False,0.25
+F#,156.47058823529363,2.0,<music21.duration.Duration 0.75>,67,,False,0.75
+C#,156.91176470588186,2.75,<music21.duration.Duration 0.25>,67,<music21.tie.Tie start>,False,0.25
+C,157.3529411764701,3.5,<music21.duration.Duration 0.5>,67,,False,0.5
+B,157.6470588235289,0.0,<music21.duration.Duration 0.5>,68,,False,0.5
+B,157.94117647058772,0.5,<music21.duration.Duration 0.5>,68,<music21.tie.Tie start>,False,0.5
+B,158.82352941176418,2.0,<music21.duration.Duration 0.75>,68,,False,0.75
+C#,159.26470588235242,2.75,<music21.duration.Duration 0.25>,68,<music21.tie.Tie start>,False,0.25
+D#,159.70588235294065,3.5,<music21.duration.Duration 0.5>,68,,False,0.5
+E,159.99999999999946,0.0,<music21.duration.Duration 0.5>,69,,False,0.5
+E,160.29411764705827,0.5,<music21.duration.Duration 1.5>,69,,False,1.5
+E,161.17647058823474,2.0,<music21.duration.Duration 0.75>,69,,False,0.75
+F#,161.61764705882297,2.75,<music21.duration.Duration 0.25>,69,<music21.tie.Tie start>,False,0.25
+G#,162.0588235294112,3.5,<music21.duration.Duration 0.5>,69,,False,0.5
+C#,162.35294117647,0.0,<music21.duration.Duration 1.75>,70,,False,1.75
+B,163.52941176470532,2.0,<music21.duration.Duration 0.25>,70,,False,0.25
+C#,163.67647058823474,2.25,<music21.duration.Duration 0.25>,70,,False,0.25
+E,163.82352941176416,2.5,<music21.duration.Duration 0.5>,70,,False,0.5
+E,164.11764705882297,3.0,<music21.duration.Duration 0.5>,70,,False,0.5
+C#,164.41176470588178,3.5,<music21.duration.Duration 0.5>,70,,False,0.5
+E,164.7058823529406,0.0,<music21.duration.Duration 0.5>,71,,False,0.5
+E,164.9999999999994,0.5,<music21.duration.Duration 1.5>,71,,False,1.5
+E,165.88235294117587,2.0,<music21.duration.Duration 0.75>,71,,False,0.75
+F#,166.3235294117641,2.75,<music21.duration.Duration 0.25>,71,<music21.tie.Tie start>,False,0.25
+G#,166.76470588235233,3.5,<music21.duration.Duration 0.5>,71,,False,0.5
+C#,167.05882352941114,0.0,<music21.duration.Duration 0.5>,72,,False,0.5
+C#,167.35294117646995,0.5,<music21.duration.Duration 1.5>,72,<music21.tie.Tie start>,False,1.5
+C#,168.52941176470523,2.5,<music21.duration.Duration 0.25>,72,,False,0.25
+C#,168.67647058823465,2.75,<music21.duration.Duration 0.25>,72,,False,0.25
+C,168.82352941176407,3.0,<music21.duration.Duration 0.25>,72,,False,0.25
+C,168.9705882352935,3.25,<music21.duration.Duration 0.25>,72,,False,0.25
+B,169.1176470588229,3.5,<music21.duration.Duration 0.25>,72,,False,0.25
+B-,169.26470588235233,3.75,<music21.duration.Duration 0.25>,72,,False,0.25
+A,169.41176470588175,0.0,<music21.duration.Duration 0.5>,73,,False,0.5
+A,169.70588235294056,0.5,<music21.duration.Duration 1.0>,73,,False,1.0
+E,170.29411764705821,1.5,<music21.duration.Duration 0.25>,73,,False,0.25
+A,170.44117647058764,1.75,<music21.duration.Duration 0.25>,73,<music21.tie.Tie start>,False,0.25
+E,170.73529411764648,2.25,<music21.duration.Duration 0.25>,73,,False,0.25
+A,170.8823529411759,2.5,<music21.duration.Duration 0.5>,73,,False,0.5
+E,171.1764705882347,3.0,<music21.duration.Duration 0.5>,73,,False,0.5
+A,171.47058823529352,3.5,<music21.duration.Duration 0.25>,73,,False,0.25
+E,171.61764705882294,3.75,<music21.duration.Duration 0.25>,73,,False,0.25
+A,171.76470588235236,0.0,<music21.duration.Duration 0.5>,74,,False,0.5
+A,172.05882352941117,0.5,<music21.duration.Duration 1.0>,74,,False,1.0
+E,172.64705882352882,1.5,<music21.duration.Duration 0.25>,74,,False,0.25
+A,172.79411764705824,1.75,<music21.duration.Duration 0.25>,74,<music21.tie.Tie start>,False,0.25
+E,173.08823529411708,2.25,<music21.duration.Duration 0.25>,74,,False,0.25
+A,173.2352941176465,2.5,<music21.duration.Duration 0.5>,74,,False,0.5
+E,173.52941176470532,3.0,<music21.duration.Duration 0.5>,74,,False,0.5
+A,173.82352941176413,3.5,<music21.duration.Duration 0.25>,74,,False,0.25
+E,173.97058823529355,3.75,<music21.duration.Duration 0.25>,74,,False,0.25
+A,174.11764705882297,0.0,<music21.duration.Duration 0.5>,75,,False,0.5
+A,174.41176470588178,0.5,<music21.duration.Duration 1.0>,75,,False,1.0
+E,174.99999999999943,1.5,<music21.duration.Duration 0.25>,75,,False,0.25
+A,175.14705882352885,1.75,<music21.duration.Duration 0.25>,75,<music21.tie.Tie start>,False,0.25
+E,175.4411764705877,2.25,<music21.duration.Duration 0.25>,75,,False,0.25
+A,175.5882352941171,2.5,<music21.duration.Duration 0.5>,75,,False,0.5
+E,175.88235294117592,3.0,<music21.duration.Duration 0.5>,75,,False,0.5
+A,176.17647058823474,3.5,<music21.duration.Duration 0.25>,75,,False,0.25
+E,176.32352941176416,3.75,<music21.duration.Duration 0.25>,75,,False,0.25
+A,176.47058823529358,0.0,<music21.duration.Duration 0.5>,76,,False,0.5
+A,176.7647058823524,0.5,<music21.duration.Duration 1.0>,76,,False,1.0
+E,177.35294117647004,1.5,<music21.duration.Duration 0.25>,76,,False,0.25
+A,177.49999999999946,1.75,<music21.duration.Duration 0.25>,76,<music21.tie.Tie start>,False,0.25
+E,177.7941176470583,2.25,<music21.duration.Duration 0.25>,76,,False,0.25
+A,177.94117647058772,2.5,<music21.duration.Duration 0.5>,76,,False,0.5
+E,178.23529411764653,3.0,<music21.duration.Duration 0.5>,76,,False,0.5
+A,178.52941176470534,3.5,<music21.duration.Duration 0.25>,76,,False,0.25
+E,178.67647058823476,3.75,<music21.duration.Duration 0.25>,76,,False,0.25
+A,178.82352941176418,0.0,<music21.duration.Duration 0.5>,77,,False,0.5
+A,179.117647058823,0.5,<music21.duration.Duration 1.0>,77,,False,1.0
+E,179.70588235294065,1.5,<music21.duration.Duration 0.25>,77,,False,0.25
+A,179.85294117647007,1.75,<music21.duration.Duration 0.25>,77,<music21.tie.Tie start>,False,0.25
+E,180.1470588235289,2.25,<music21.duration.Duration 0.25>,77,,False,0.25
+A,180.29411764705833,2.5,<music21.duration.Duration 0.5>,77,,False,0.5
+E,180.58823529411714,3.0,<music21.duration.Duration 0.5>,77,,False,0.5
+A,180.88235294117595,3.5,<music21.duration.Duration 0.25>,77,,False,0.25
+E,181.02941176470537,3.75,<music21.duration.Duration 0.25>,77,,False,0.25
+A,181.1764705882348,0.0,<music21.duration.Duration 0.5>,78,,False,0.5
+A,181.4705882352936,0.5,<music21.duration.Duration 1.0>,78,,False,1.0
+E,182.05882352941126,1.5,<music21.duration.Duration 0.25>,78,,False,0.25
+A,182.20588235294068,1.75,<music21.duration.Duration 0.25>,78,<music21.tie.Tie start>,False,0.25
+E,182.49999999999952,2.25,<music21.duration.Duration 0.25>,78,,False,0.25
+A,182.64705882352894,2.5,<music21.duration.Duration 0.5>,78,,False,0.5
+E,182.94117647058775,3.0,<music21.duration.Duration 0.5>,78,,False,0.5
+A,183.23529411764656,3.5,<music21.duration.Duration 0.25>,78,,False,0.25
+E,183.38235294117598,3.75,<music21.duration.Duration 0.25>,78,,False,0.25
+A,183.5294117647054,0.0,<music21.duration.Duration 0.5>,79,,False,0.5
+A,183.8235294117642,0.5,<music21.duration.Duration 1.0>,79,,False,1.0
+E,184.41176470588186,1.5,<music21.duration.Duration 0.25>,79,,False,0.25
+A,184.55882352941128,1.75,<music21.duration.Duration 0.25>,79,<music21.tie.Tie start>,False,0.25
+E,184.85294117647013,2.25,<music21.duration.Duration 0.25>,79,,False,0.25
+A,184.99999999999955,2.5,<music21.duration.Duration 0.5>,79,,False,0.5
+E,185.29411764705836,3.0,<music21.duration.Duration 0.5>,79,,False,0.5
+A,185.58823529411717,3.5,<music21.duration.Duration 0.25>,79,,False,0.25
+E,185.7352941176466,3.75,<music21.duration.Duration 0.25>,79,,False,0.25
+A,185.882352941176,0.0,<music21.duration.Duration 0.5>,80,,False,0.5
+A,186.17647058823482,0.5,<music21.duration.Duration 1.0>,80,,False,1.0
+E,186.76470588235247,1.5,<music21.duration.Duration 0.25>,80,,False,0.25
+A,186.9117647058819,1.75,<music21.duration.Duration 0.25>,80,<music21.tie.Tie start>,False,0.25
+E,187.20588235294073,2.25,<music21.duration.Duration 0.25>,80,,False,0.25
+A,187.35294117647015,2.5,<music21.duration.Duration 0.5>,80,,False,0.5
+A,187.64705882352897,3.0,<music21.duration.Duration 0.5>,80,,False,0.5
+A#,187.94117647058778,3.5,<music21.duration.Duration 0.5>,80,,False,0.5
+B,188.2352941176466,0.0,<music21.duration.Duration 0.5>,81,,False,0.5
+B,188.5294117647054,0.5,<music21.duration.Duration 1.0>,81,,False,1.0
+D#,189.11764705882305,1.5,<music21.duration.Duration 0.5>,81,<music21.tie.Tie start>,False,0.5
+E,189.55882352941128,2.25,<music21.duration.Duration 0.5>,81,,False,0.5
+E#,189.8529411764701,2.75,<music21.duration.Duration 0.25>,81,,False,0.25
+F#,189.99999999999952,3.0,<music21.duration.Duration 0.5>,81,,False,0.5
+A,190.29411764705833,3.5,<music21.duration.Duration 0.5>,81,,False,0.5
+B,190.58823529411714,0.0,<music21.duration.Duration 0.5>,82,,False,0.5
+B,190.88235294117595,0.5,<music21.duration.Duration 0.5>,82,<music21.tie.Tie start>,False,0.5
+D#,191.32352941176418,1.25,<music21.duration.Duration 0.5>,82,,False,0.5
+E,191.617647058823,1.75,<music21.duration.Duration 0.25>,82,<music21.tie.Tie start>,False,0.25
+E#,191.91176470588184,2.25,<music21.duration.Duration 0.25>,82,,False,0.25
+F#,192.05882352941126,2.5,<music21.duration.Duration 0.5>,82,,False,0.5
+F#,192.35294117647007,3.0,<music21.duration.Duration 0.5>,82,,False,0.5
+C#,192.64705882352888,3.5,<music21.duration.Duration 0.5>,82,,False,0.5
+B,192.9411764705877,0.0,<music21.duration.Duration 0.25>,83,,False,0.25
+B,193.0882352941171,0.25,<music21.duration.Duration 0.5>,83,,False,0.5
+B,193.38235294117592,0.75,<music21.duration.Duration 0.25>,83,,False,0.25
+D#,193.52941176470534,1.0,<music21.duration.Duration 0.25>,83,,False,0.25
+D#,193.67647058823476,1.25,<music21.duration.Duration 0.5>,83,,False,0.5
+D#,193.97058823529358,1.75,<music21.duration.Duration 0.25>,83,,False,0.25
+E,194.117647058823,2.0,<music21.duration.Duration 0.25>,83,,False,0.25
+E,194.26470588235242,2.25,<music21.duration.Duration 0.5>,83,,False,0.5
+E,194.55882352941123,2.75,<music21.duration.Duration 0.25>,83,,False,0.25
+E#,194.70588235294065,3.0,<music21.duration.Duration 0.25>,83,,False,0.25
+E#,194.85294117647007,3.25,<music21.duration.Duration 0.5>,83,,False,0.5
+E#,195.14705882352888,3.75,<music21.duration.Duration 0.25>,83,,False,0.25
+F#,195.2941176470583,0.0,<music21.duration.Duration 0.25>,84,,False,0.25
+F#,195.44117647058772,0.25,<music21.duration.Duration 0.5>,84,,False,0.5
+F#,195.73529411764653,0.75,<music21.duration.Duration 0.25>,84,,False,0.25
+A,195.88235294117595,1.0,<music21.duration.Duration 0.5>,84,,False,0.5
+A#,196.17647058823476,1.5,<music21.duration.Duration 0.5>,84,,False,0.5
+B,196.47058823529358,2.0,<music21.duration.Duration 0.25>,84,,False,0.25
+F#,196.617647058823,2.25,<music21.duration.Duration 0.25>,84,,False,0.25
+C,196.76470588235242,2.5,<music21.duration.Duration 0.5>,84,,False,0.5
+B,197.05882352941123,3.0,<music21.duration.Duration 0.5>,84,,False,0.5
+B-,197.35294117647004,3.5,<music21.duration.Duration 0.5>,84,,False,0.5
+A,197.64705882352885,0.0,<music21.duration.Duration 0.5>,85,,False,0.5
+A,197.94117647058766,0.5,<music21.duration.Duration 0.5>,85,<music21.tie.Tie start>,False,0.5
+E,198.6764705882347,1.75,<music21.duration.Duration 0.25>,85,<music21.tie.Tie start>,False,0.25
+A,198.97058823529355,2.25,<music21.duration.Duration 0.5>,85,,False,0.5
+E,199.26470588235236,2.75,<music21.duration.Duration 0.25>,85,,False,0.25
+A,199.41176470588178,3.0,<music21.duration.Duration 0.5>,85,,False,0.5
+E,199.7058823529406,3.5,<music21.duration.Duration 0.5>,85,,False,0.5
+A,199.9999999999994,0.0,<music21.duration.Duration 0.5>,86,,False,0.5
+A,200.29411764705821,0.5,<music21.duration.Duration 0.5>,86,<music21.tie.Tie start>,False,0.5
+E,201.02941176470526,1.75,<music21.duration.Duration 0.25>,86,<music21.tie.Tie start>,False,0.25
+A,201.3235294117641,2.25,<music21.duration.Duration 0.5>,86,,False,0.5
+E,201.6176470588229,2.75,<music21.duration.Duration 0.25>,86,,False,0.25
+A,201.76470588235233,3.0,<music21.duration.Duration 0.25>,86,,False,0.25
+D,201.91176470588175,3.25,<music21.duration.Duration 0.25>,86,,False,0.25
+E,202.05882352941117,3.5,<music21.duration.Duration 0.5>,86,,False,0.5
+A,202.35294117646998,0.0,<music21.duration.Duration 0.5>,87,,False,0.5
+A,202.6470588235288,0.5,<music21.duration.Duration 0.5>,87,<music21.tie.Tie start>,False,0.5
+E,203.38235294117584,1.75,<music21.duration.Duration 0.25>,87,<music21.tie.Tie start>,False,0.25
+A,203.67647058823468,2.25,<music21.duration.Duration 0.5>,87,,False,0.5
+E,203.9705882352935,2.75,<music21.duration.Duration 0.25>,87,,False,0.25
+A,204.1176470588229,3.0,<music21.duration.Duration 0.25>,87,,False,0.25
+D,204.26470588235233,3.25,<music21.duration.Duration 0.25>,87,,False,0.25
+E,204.41176470588175,3.5,<music21.duration.Duration 0.5>,87,,False,0.5
+A,204.70588235294056,0.0,<music21.duration.Duration 0.5>,88,,False,0.5
+A,204.99999999999937,0.5,<music21.duration.Duration 0.5>,88,<music21.tie.Tie start>,False,0.5
+E,205.73529411764642,1.75,<music21.duration.Duration 0.25>,88,<music21.tie.Tie start>,False,0.25
+A,206.02941176470526,2.25,<music21.duration.Duration 0.5>,88,,False,0.5
+E,206.32352941176407,2.75,<music21.duration.Duration 0.25>,88,,False,0.25
+A,206.4705882352935,3.0,<music21.duration.Duration 0.25>,88,,False,0.25
+E,206.6176470588229,3.25,<music21.duration.Duration 0.25>,88,,False,0.25
+A,206.76470588235233,3.5,<music21.duration.Duration 0.25>,88,,False,0.25
+E,206.91176470588175,3.75,<music21.duration.Duration 0.25>,88,,False,0.25
+A,207.05882352941117,0.0,<music21.duration.Duration 0.5>,89,,False,0.5
+A,207.35294117646998,0.5,<music21.duration.Duration 0.5>,89,<music21.tie.Tie start>,False,0.5
+E,208.08823529411703,1.75,<music21.duration.Duration 0.25>,89,<music21.tie.Tie start>,False,0.25
+A,208.38235294117587,2.25,<music21.duration.Duration 0.5>,89,,False,0.5
+E,208.67647058823468,2.75,<music21.duration.Duration 0.25>,89,,False,0.25
+A,208.8235294117641,3.0,<music21.duration.Duration 0.5>,89,,False,0.5
+E,209.1176470588229,3.5,<music21.duration.Duration 0.5>,89,,False,0.5
+A,209.41176470588172,0.0,<music21.duration.Duration 0.5>,90,,False,0.5
+A,209.70588235294053,0.5,<music21.duration.Duration 0.5>,90,<music21.tie.Tie start>,False,0.5
+E,210.44117647058758,1.75,<music21.duration.Duration 0.25>,90,<music21.tie.Tie start>,False,0.25
+A,210.73529411764642,2.25,<music21.duration.Duration 0.5>,90,,False,0.5
+E,211.02941176470523,2.75,<music21.duration.Duration 0.25>,90,,False,0.25
+A,211.17647058823465,3.0,<music21.duration.Duration 0.25>,90,,False,0.25
+E,211.32352941176407,3.25,<music21.duration.Duration 0.25>,90,,False,0.25
+A,211.4705882352935,3.5,<music21.duration.Duration 0.25>,90,,False,0.25
+E,211.6176470588229,3.75,<music21.duration.Duration 0.25>,90,,False,0.25
+A,211.76470588235233,0.0,<music21.duration.Duration 0.5>,91,,False,0.5
+A,212.05882352941114,0.5,<music21.duration.Duration 0.5>,91,<music21.tie.Tie start>,False,0.5
+E,212.7941176470582,1.75,<music21.duration.Duration 0.25>,91,<music21.tie.Tie start>,False,0.25
+A,213.08823529411703,2.25,<music21.duration.Duration 0.5>,91,,False,0.5
+E,213.38235294117584,2.75,<music21.duration.Duration 0.25>,91,,False,0.25
+A,213.52941176470526,3.0,<music21.duration.Duration 0.5>,91,,False,0.5
+E,213.82352941176407,3.5,<music21.duration.Duration 0.5>,91,,False,0.5
+A,214.11764705882288,0.0,<music21.duration.Duration 0.5>,92,,False,0.5
+A,214.4117647058817,0.5,<music21.duration.Duration 0.5>,92,<music21.tie.Tie start>,False,0.5
+E,215.14705882352874,1.75,<music21.duration.Duration 0.25>,92,,False,0.25
+A,215.29411764705816,2.0,<music21.duration.Duration 0.25>,92,,False,0.25
+E,215.44117647058758,2.25,<music21.duration.Duration 0.25>,92,,False,0.25
+A,215.588235294117,2.5,<music21.duration.Duration 0.5>,92,<music21.tie.Tie start>,False,0.5
+A#,216.02941176470523,3.25,<music21.duration.Duration 0.75>,92,,False,0.75
+B,216.47058823529346,0.0,<music21.duration.Duration 0.5>,93,,False,0.5
+B,216.76470588235227,0.5,<music21.duration.Duration 0.5>,93,,False,0.5
+D#,217.0588235294111,1.0,<music21.duration.Duration 0.25>,93,,False,0.25
+D#,217.2058823529405,1.25,<music21.duration.Duration 0.75>,93,,False,0.75
+E,217.64705882352874,2.0,<music21.duration.Duration 0.5>,93,,False,0.5
+E#,217.94117647058755,2.5,<music21.duration.Duration 0.5>,93,,False,0.5
+F#,218.23529411764636,3.0,<music21.duration.Duration 0.5>,93,,False,0.5
+A,218.52941176470517,3.5,<music21.duration.Duration 0.5>,93,,False,0.5
+B,218.82352941176399,0.0,<music21.duration.Duration 0.5>,94,,False,0.5
+B,219.1176470588228,0.5,<music21.duration.Duration 1.0>,94,,False,1.0
+D#,219.70588235294045,1.5,<music21.duration.Duration 0.25>,94,,False,0.25
+D#,219.85294117646987,1.75,<music21.duration.Duration 0.25>,94,<music21.tie.Tie start>,False,0.25
+E,220.29411764705813,2.5,<music21.duration.Duration 0.5>,94,,False,0.5
+F#,220.58823529411694,3.0,<music21.duration.Duration 1.0>,94,,False,1.0
