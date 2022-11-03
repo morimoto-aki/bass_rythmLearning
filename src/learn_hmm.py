@@ -25,6 +25,9 @@ def note_value():
     lquarter_length_measure = []  # 小節内の音価情報リスト
     measure = "1"
     startprob_list = []  # 初期状態確率リスト
+    emmisionprob_list = []  # 出現確率リスト
+    states = {}  # 潜在状態辞書
+    observe_states = {}  # 観測値辞書
 
     # データの精査
     # 小節ごとに分けたリストの生成
@@ -61,11 +64,38 @@ def note_value():
     for val in dquarter_length.values():
         startprob_list.append(val/sum(dquarter_length.values()))
 
+    # 潜在状態を求める
+    for i, length in enumerate(dquarter_length):
+        states[length] = i
+
+    # 観測値を求める
+    for i, offset in enumerate(doffset):
+        observe_states[offset] = i
+
     # 初期状態確率
+    #'1.75', '0.25+0.5', '0.5', '0.25+0.25', '0.25', '0.5+0.75', '0.75', '2.0', '3.0', '1.5+0.75'
+    # , '1.0+0.75', '0.25+0.75', '2.0+0.75', '1.5', '0.5+0.25', '2.0+0.5', '1.0', '0.25+1.0', '1.5+0.5'
     startprob = np.array(startprob_list)
 
     # 出現確立を求める
-    print(doffset)
+    #'1.75', '0.25+0.5', '0.5', '0.25+0.25', '0.25', '0.5+0.75', '0.75', '2.0', '3.0', '1.5+0.75'
+    # , '1.0+0.75', '0.25+0.75', '2.0+0.75', '1.5', '0.5+0.25', '2.0+0.5', '1.0', '0.25+1.0', '1.5+0.5'
+    #'0.0', '2.0', '2.5', '3.0', '3.5', '2.25', '2.75', '1.0', '1.75', '0.75', '3.25', '0.25', '0.5', '1.25', '1.5', '3.75'
+    for length in states:
+        dic = dict.fromkeys(observe_states, 0)
+        lis = lquarter_length_offset[lquarter_length_offset.index(length) + 1]
+        prob_list = []
+        for offset in lis:
+            dic[offset] += 1
+
+        for val in dic.values():
+            prob_list.append(val/sum(dic.values()))
+
+        emmisionprob_list.append(prob_list)
+
+    emmisionprob = np.array(emmisionprob_list)
+
+    print(emmisionprob)
 
 
 if __name__ == '__main__':
