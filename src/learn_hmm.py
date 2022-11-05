@@ -9,11 +9,6 @@ def file_open():
         return pickle.load(p)
 
 
-def main():
-    '''main関数'''
-    note_value()
-
-
 def note_value():
     '''音価学習用の関数'''
     notes_info = file_open()  # 音符情報
@@ -26,6 +21,7 @@ def note_value():
     measure = "1"
     startprob_list = []  # 初期状態確率リスト
     emmisionprob_list = []  # 出現確率リスト
+    transmat_list = []     # 遷移確率リスト
     states = {}  # 潜在状態辞書
     observe_states = {}  # 観測値辞書
 
@@ -95,7 +91,35 @@ def note_value():
 
     emmisionprob = np.array(emmisionprob_list)
 
-    print(emmisionprob)
+    # 遷移確率を求める
+    #'1.75', '0.25+0.5', '0.5', '0.25+0.25', '0.25', '0.5+0.75', '0.75', '2.0', '3.0', '1.5+0.75'
+    # , '1.0+0.75', '0.25+0.75', '2.0+0.75', '1.5', '0.5+0.25', '2.0+0.5', '1.0', '0.25+1.0', '1.5+0.5'
+
+    for length in states:
+        dic = dict.fromkeys(states, 0)
+        indexes = [i for i, x in enumerate(lquarter_length_all) if x == length]
+        lis = []
+        prob_list = []
+        for index in indexes:
+            if lquarter_length_all[index] is not lquarter_length_all[-1]:
+                next_length = lquarter_length_all[index + 1]
+                lis.append(next_length)
+
+        for offset in lis:
+            dic[offset] += 1
+
+        for val in dic.values():
+            prob_list.append(val/sum(dic.values()))
+
+        transmat_list.append(prob_list)
+
+    transmat = np.array(transmat_list)
+    print(transmat)
+
+
+def main():
+    '''main関数'''
+    note_value()
 
 
 if __name__ == '__main__':
