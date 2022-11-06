@@ -1,5 +1,7 @@
 '''隠れマルコフモデルに基づき学習するプログラム'''
 import pickle
+import hmmlearn
+from hmmlearn import hmm
 import numpy as np
 
 
@@ -63,20 +65,16 @@ def note_value():
     # 潜在状態を求める
     for i, length in enumerate(dquarter_length):
         states[length] = i
+    inv_dict_states = {str(v): k for k, v in states.items()}
 
     # 観測値を求める
     for i, offset in enumerate(doffset):
         observe_states[offset] = i
 
     # 初期状態確率
-    #'1.75', '0.25+0.5', '0.5', '0.25+0.25', '0.25', '0.5+0.75', '0.75', '2.0', '3.0', '1.5+0.75'
-    # , '1.0+0.75', '0.25+0.75', '2.0+0.75', '1.5', '0.5+0.25', '2.0+0.5', '1.0', '0.25+1.0', '1.5+0.5'
     startprob = np.array(startprob_list)
 
     # 出現確立を求める
-    #'1.75', '0.25+0.5', '0.5', '0.25+0.25', '0.25', '0.5+0.75', '0.75', '2.0', '3.0', '1.5+0.75'
-    # , '1.0+0.75', '0.25+0.75', '2.0+0.75', '1.5', '0.5+0.25', '2.0+0.5', '1.0', '0.25+1.0', '1.5+0.5'
-    #'0.0', '2.0', '2.5', '3.0', '3.5', '2.25', '2.75', '1.0', '1.75', '0.75', '3.25', '0.25', '0.5', '1.25', '1.5', '3.75'
     for length in states:
         dic = dict.fromkeys(observe_states, 0)
         lis = lquarter_length_offset[lquarter_length_offset.index(length) + 1]
@@ -88,13 +86,9 @@ def note_value():
             prob_list.append(val/sum(dic.values()))
 
         emmisionprob_list.append(prob_list)
-
     emmisionprob = np.array(emmisionprob_list)
 
     # 遷移確率を求める
-    #'1.75', '0.25+0.5', '0.5', '0.25+0.25', '0.25', '0.5+0.75', '0.75', '2.0', '3.0', '1.5+0.75'
-    # , '1.0+0.75', '0.25+0.75', '2.0+0.75', '1.5', '0.5+0.25', '2.0+0.5', '1.0', '0.25+1.0', '1.5+0.5'
-
     for length in states:
         dic = dict.fromkeys(states, 0)
         indexes = [i for i, x in enumerate(lquarter_length_all) if x == length]
@@ -112,9 +106,27 @@ def note_value():
             prob_list.append(val/sum(dic.values()))
 
         transmat_list.append(prob_list)
-
     transmat = np.array(transmat_list)
-    print(transmat)
+
+    # hmmlearn のインスタンス作成
+    model = hmm.MultinomialHMM(n_components=len(states), init_params='', params='')
+    model.n_features = len(observe_states)
+    model.startprob_ = startprob
+    model.transmat_ = transmat
+    model.emissionprob_ = emmisionprob
+
+    observes = ["0.0", "1.75", "2.5", "3.0", "3.5"]
+    n_samples = 1
+    observe_codes = np.array([observe_states[o] for o in observes]).reshape((len(observes), n_samples))
+    print(type(observe_codes[0][0]))
+
+    # 推定
+    logprob, decoded_codes = model.decode(observe_codes)
+
+    decoded = [inv_dict_states[str(d)] for d in decoded_codes]
+    # model.predict(observe_codes)
+    print(decoded)
+    print(f'{np.exp(logprob)=}')
 
 
 def main():

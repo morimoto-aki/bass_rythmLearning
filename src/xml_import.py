@@ -39,8 +39,9 @@ def get_notes():
                     tie = element.tie.type
                     if tie == "start":
                         tie_quarter_length = str(element.quarterLength)
+                        offset = element.offset
                     elif tie == "stop":
-                        noteinfo = [str(element.measureNumber), str(element.pitch), str(element.offset), str(element.offset - offset_measure),
+                        noteinfo = [str(element.measureNumber), str(element.pitch), str(offset), str(offset - offset_measure),
                                     tie_quarter_length + "+" + str(element.quarterLength), str(element.fullName), str(element.notehead)]
                         notes.append(noteinfo)
                         note_list.append(noteinfo)
