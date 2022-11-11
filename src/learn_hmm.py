@@ -115,7 +115,7 @@ def note_value():
     model.transmat_ = transmat
     model.emissionprob_ = emmisionprob
 
-    observes = ["0.0", "1.75", "2.5", "3.0", "3.5", "0.0", "0.5", "1.75", "2.25", "2.75", "3.0", "3.5", "0.0"]
+    observes = ["0.0", "1.75", "2.25", "2.5", "3.0", "3.5", "0.0"]
     n_samples = 1
     observe_codes = np.array([observe_states[o] for o in observes]).reshape((len(observes), n_samples))
     print(type(observe_codes[0][0]))

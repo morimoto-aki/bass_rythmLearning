@@ -4,8 +4,6 @@ import csv
 from music21 import converter, instrument, note, chord
 import file_import
 
-path_list = file_import.file_path()
-
 
 def get_notes():
     '''楽譜をcsvにする関数'''
