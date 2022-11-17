@@ -32,7 +32,7 @@ def note_value():
     for i, note in enumerate(aquarter_length):
         if measure == aquarter_length[i, 0]:
             lquarter_length_measure.append([aquarter_length[i, 3], aquarter_length[i, 4]])
-            #print(aquarter_length[i, 1])
+            # print(aquarter_length[i, 1])
 
         else:
             lquarter_length.append(lquarter_length_measure)
@@ -115,18 +115,31 @@ def note_value():
     model.transmat_ = transmat
     model.emissionprob_ = emmisionprob
 
-    observes = ["0.0", "1.75", "2.25", "2.5", "3.0", "3.5", "0.0"]
+    observes = ["0.0", "1.75", "2.25", "2.75", "3.0", "3.5"]
     n_samples = 1
     observe_codes = np.array([observe_states[o] for o in observes]).reshape((len(observes), n_samples))
-    print(type(observe_codes[0][0]))
+    # print(type(observe_codes[0][0]))
 
+    # サンプル信号を 10 個出力する。
+    #X, Z = model.sample(n_samples=10, currstate=observe_codes)
+    # print(X)
+    # print(Z)
+    # print("--------------------------")
+    # for i, o in enumerate(X):
+    #    keys = [key for key, value in observe_states.items() if value == o[0]]
+    #    print(i, ":", keys)
+    # print("--------------------------")
+    # for i, o in enumerate(Z):
+    #    keys = [key for key, value in states.items() if value == o]
+    #    print(i, ":", keys)
+
+    # model.predict(observe_codes)
+    print("--------------------------")
     # 推定
     logprob, decoded_codes = model.decode(observe_codes)
-
     decoded = [inv_dict_states[str(d)] for d in decoded_codes]
-    # model.predict(observe_codes)
     print(decoded)
-    print(f'{np.exp(logprob)=}')
+    # print(f'{np.exp(logprob)=}')
 
 
 def main():

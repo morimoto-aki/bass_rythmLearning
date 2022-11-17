@@ -28,7 +28,7 @@ def get_notes():
             notes_to_parse = xml.flat.notes
 
         for element in notes_to_parse:
-            if isinstance(element, note.Note):
+            if isinstance(element, note.Note) or isinstance(element, note.Rest):
                 if element.measureNumber is not measure_no:
                     measure_no = element.measureNumber
                     offset_measure = element.offset
@@ -44,6 +44,12 @@ def get_notes():
                         notes.append(noteinfo)
                         note_list.append(noteinfo)
 
+                elif element.isRest:
+                    noteinfo = [str(element.measureNumber), "Rest", str(element.offset), str(element.offset - offset_measure),
+                                str(element.quarterLength), str(element.fullName), ""]
+                    notes.append(noteinfo)
+                    note_list.append(noteinfo)
+
                 else:
                     noteinfo = [str(element.measureNumber), str(element.pitch), str(element.offset), str(element.offset - offset_measure),
                                 str(element.quarterLength), str(element.fullName), str(element.notehead)]
@@ -52,6 +58,9 @@ def get_notes():
 
             elif isinstance(element, chord.Chord):
                 notes.append('.'.join(str(n) for n in element.normalOrder))
+
+            elif isinstance(element, note.Rest):
+                print("rest")
 
     with open('src/data/notesinfo.csv', 'w') as filepath:
         writer = csv.writer(filepath, lineterminator='\n')
