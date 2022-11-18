@@ -11,7 +11,7 @@ def file_open():
         return pickle.load(p)
 
 
-def note_value():
+def value_hmm():
     '''音価学習用の関数'''
     notes_info = file_open()  # 音符情報
     lquarter_length_offset = []  # すべての音価位置情報リスト
@@ -142,9 +142,14 @@ def note_value():
     # print(f'{np.exp(logprob)=}')
 
 
+def pitch_hmm():
+    '''音高学習用の関数'''
+    notes_info = file_open()
+
+
 def main():
     '''main関数'''
-    note_value()
+    value_hmm()
 
 
 if __name__ == '__main__':

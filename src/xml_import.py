@@ -28,6 +28,7 @@ def get_notes():
             notes_to_parse = xml.flat.notes
 
         for element in notes_to_parse:
+            # if isinstance(element, .)
             if isinstance(element, note.Note) or isinstance(element, note.Rest):
                 if element.measureNumber is not measure_no:
                     measure_no = element.measureNumber
