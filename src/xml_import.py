@@ -44,7 +44,7 @@ def get_notes():
                 if element.tie is not None:
                     tie = element.tie.type
                     p2 = element.pitch
-                    interval_name = (interval.Interval(p1, p2)).name
+                    interval_name = (interval.Interval(p1, p2)).directedName
                     if tie == "start":
                         tie_quarter_length = str(element.quarterLength)
                         offset = element.offset
@@ -68,7 +68,7 @@ def get_notes():
 
                 else:
                     p2 = element.pitch
-                    interval_name = (interval.Interval(p1, p2)).name
+                    interval_name = (interval.Interval(p1, p2)).directedName
                     noteinfo = [str(element.measureNumber), str(element.pitch), str(element.offset), str(element.offset - offset_measure),
                                 str(element.quarterLength), str(element.fullName), str(element.notehead), root, chord_name, interval_name]
                     notes.append(noteinfo)
