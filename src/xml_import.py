@@ -1,7 +1,7 @@
 '''xml形式の楽譜をインポートするプログラム'''
 import pickle
 import csv
-from music21 import converter, instrument, note, chord
+from music21 import converter, instrument, note, chord, interval, pitch
 import file_import
 
 
@@ -11,10 +11,13 @@ def get_notes():
     filepath = path[1]
     notes = []
     note_list = [["measure", "pitch", "offset", "offsetMeasure",
-                  "quarterLength", "fullName", "notehead"]]
+                  "quarterLength", "fullName", "notehead", "root", "chord", "interval"]]
+    root = ""
+    chord_name = ""
     measure_no = 0
     offset_measure = 0
     tie_quarter_length = 0
+    octave = 2
 
     for file in filepath:
         xml = converter.parse(file)
@@ -28,37 +31,48 @@ def get_notes():
             notes_to_parse = xml.flat.notes
 
         for element in notes_to_parse:
-            # if isinstance(element, .)
+            if isinstance(element, chord.Chord):
+                root = element.pitchNames[0]
+                chord_name = element.figure
+
             if isinstance(element, note.Note) or isinstance(element, note.Rest):
+                p1 = pitch.Pitch(root + str(octave))
                 if element.measureNumber is not measure_no:
                     measure_no = element.measureNumber
                     offset_measure = element.offset
 
                 if element.tie is not None:
                     tie = element.tie.type
+                    p2 = element.pitch
+                    interval_name = (interval.Interval(p1, p2)).name
                     if tie == "start":
                         tie_quarter_length = str(element.quarterLength)
                         offset = element.offset
                     elif tie == "stop":
                         noteinfo = [str(element.measureNumber), str(element.pitch), str(offset), str(offset - offset_measure),
-                                    tie_quarter_length + "+" + str(element.quarterLength), str(element.fullName), str(element.notehead)]
+                                    tie_quarter_length + "+" + str(element.quarterLength), str(element.fullName), str(element.notehead), root, chord_name, interval_name]
                         notes.append(noteinfo)
                         note_list.append(noteinfo)
 
                 elif element.isRest:
                     noteinfo = [str(element.measureNumber), "Rest", str(element.offset), str(element.offset - offset_measure),
-                                str(element.quarterLength), str(element.fullName), ""]
+                                str(element.quarterLength), str(element.fullName), "", root, chord_name, "Rest"]
+                    notes.append(noteinfo)
+                    note_list.append(noteinfo)
+
+                elif element.notehead is "x":
+                    noteinfo = [str(element.measureNumber), "x", str(element.offset), str(element.offset - offset_measure),
+                                str(element.quarterLength), str(element.fullName), element.notehead, root, chord_name, "x"]
                     notes.append(noteinfo)
                     note_list.append(noteinfo)
 
                 else:
+                    p2 = element.pitch
+                    interval_name = (interval.Interval(p1, p2)).name
                     noteinfo = [str(element.measureNumber), str(element.pitch), str(element.offset), str(element.offset - offset_measure),
-                                str(element.quarterLength), str(element.fullName), str(element.notehead)]
+                                str(element.quarterLength), str(element.fullName), str(element.notehead), root, chord_name, interval_name]
                     notes.append(noteinfo)
                     note_list.append(noteinfo)
-
-            elif isinstance(element, chord.Chord):
-                notes.append('.'.join(str(n) for n in element.normalOrder))
 
             elif isinstance(element, note.Rest):
                 print("rest")
