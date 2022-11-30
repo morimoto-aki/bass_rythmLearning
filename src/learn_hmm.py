@@ -130,7 +130,7 @@ def value_hmm():
     model.transmat_ = transmat
     model.emissionprob_ = emmisionprob
 
-    observes = ["0.0", "1.75", "2.25", "2.75", "3.0", "3.5"]
+    observes = ["1.75"]
     n_samples = 1
     observe_codes = np.array([observe_states[o] for o in observes]).reshape((len(observes), n_samples))
     # print(type(observe_codes[0][0]))
@@ -154,7 +154,7 @@ def value_hmm():
     logprob, decoded_codes = model.decode(observe_codes)
     decoded = [inv_dict_states[str(d)] for d in decoded_codes]
     print(decoded)
-    # print(f'{np.exp(logprob)=}')
+    print(f'{np.exp(logprob)=}')
 
 
 def pitch_hmm():
@@ -278,7 +278,7 @@ def pitch_hmm():
     model.startprob_ = startprob
     model.transmat_ = transmat
     model.emissionprob_ = emmisionprob
-    observes = [1, 2, 3, 4, 5, 6]
+    observes = [1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6, 7]
     n_samples = 1
     observe_codes = np.array([observe_states[o] for o in observes]).reshape((len(observes), n_samples))
 
@@ -286,12 +286,26 @@ def pitch_hmm():
     logprob, decoded_codes = model.decode(observe_codes)
     decoded = [inv_dict_states[str(d)] for d in decoded_codes]
     print(decoded)
+    print(f'{np.exp(logprob)=}')
+
+
+def generate(states, observe_states, startprob, transmat, emmisionprob):
+    '''生成用の関数'''
+    observes = ["1.75"]
+    n_samples = 1
+    observe_codes = np.array([observe_states[o] for o in observes]).reshape((len(observes), n_samples))
+    model = hmm.MultinomialHMM(n_components=len(states), init_params='', params='')
+    model.n_features = len(observe_states)
+    model.startprob_ = startprob
+    model.transmat_ = transmat
+    model.emissionprob_ = emmisionprob
 
 
 def main():
     '''main関数'''
-    # value_hmm()
-    pitch_hmm()
+    value_hmm()
+    print("--------------------------")
+    # pitch_hmm()
 
 
 if __name__ == '__main__':
