@@ -11,6 +11,18 @@ def file_open():
         return pickle.load(p)
 
 
+def file_open_major():
+    '''major楽譜データをインポートする関数'''
+    with open('src/data/notesinfo_major', 'rb') as p:
+        return pickle.load(p)
+
+
+def file_open_minor():
+    '''minor楽譜データをインポートする関数'''
+    with open('src/data/notesinfo_minor', 'rb') as p:
+        return pickle.load(p)
+
+
 def value_hmm():
     '''音価学習用の関数'''
     # 音符情報
@@ -130,7 +142,7 @@ def value_hmm():
     model.transmat_ = transmat
     model.emissionprob_ = emmisionprob
 
-    observes = ["1.75"]
+    observes = ["0.0", "1.75", "2.5", "3.0", "3.5", "0.0", "0.5", "1.75", "2.25", "2.5", "3.0", "3.5"]
     n_samples = 1
     observe_codes = np.array([observe_states[o] for o in observes]).reshape((len(observes), n_samples))
     # print(type(observe_codes[0][0]))
@@ -157,10 +169,10 @@ def value_hmm():
     print(f'{np.exp(logprob)=}')
 
 
-def pitch_hmm():
+def pitch_hmm(file):
     '''音高学習用の関数'''
     # 音符情報
-    notes_info = file_open()
+    notes_info = file
     # 音符情報array
     notes_info_array = np.array(notes_info)
     # すべての度数no情報リスト
@@ -192,7 +204,7 @@ def pitch_hmm():
     for i, note in enumerate(notes_info_array):
         if measure == notes_info_array[i, 0]:
             no_measure += 1
-            lpitch_measure.append([no_measure, notes_info_array[i, 9]])
+            lpitch_measure.append([no_measure, notes_info_array[i, 4]])
             lno_measure.append(no_measure)
 
         else:
@@ -200,19 +212,19 @@ def pitch_hmm():
             lpitch_measure = []
             measure = notes_info_array[i, 0]
             no_measure = 1
-            lpitch_measure.append([no_measure, notes_info_array[i, 9]])
+            lpitch_measure.append([no_measure, notes_info_array[i, 4]])
             lno_measure.append(no_measure)
 
         # 度数がまだ要素にないとき
-        if note[9] not in lpitch_no:
-            lpitch_no.append(note[9])
+        if note[4] not in lpitch_no:
+            lpitch_no.append(note[4])
             lpitch_no.append([no_measure])
 
         # 度数がすでに要素にあるとき
         else:
-            lpitch_no[lpitch_no.index(note[9]) + 1].append(no_measure)
+            lpitch_no[lpitch_no.index(note[4]) + 1].append(no_measure)
 
-        lpitch_all.append(note[9])
+        lpitch_all.append(note[4])
 
     # 音符情報辞書
     dpitch = {key: lpitch.count(key) for key in lpitch_all}
@@ -221,7 +233,10 @@ def pitch_hmm():
 
     # 初期状態を求める
     for i, note_pitch in enumerate(lpitch):
-        dpitch[note_pitch[0][1]] += 1
+        try:
+            dpitch[note_pitch[0][1]] += 1
+        except:
+            print('rangeError')
 
     for val in dpitch.values():
         startprob_list.append(val/sum(dpitch.values()))
@@ -278,7 +293,7 @@ def pitch_hmm():
     model.startprob_ = startprob
     model.transmat_ = transmat
     model.emissionprob_ = emmisionprob
-    observes = [1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6, 7]
+    observes = [1, 2, 3, 4, 5, 1, 2, 3, 4, 5, 6, 7]
     n_samples = 1
     observe_codes = np.array([observe_states[o] for o in observes]).reshape((len(observes), n_samples))
 
@@ -293,7 +308,9 @@ def main():
     '''main関数'''
     value_hmm()
     print("--------------------------")
-    # pitch_hmm()
+    pitch_hmm(file_open_major())
+    print("--------------------------")
+    pitch_hmm(file_open_minor())
 
 
 if __name__ == '__main__':
